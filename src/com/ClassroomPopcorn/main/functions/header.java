@@ -19,6 +19,7 @@ public class header {
     public static BorderPane header(){
         BorderPane headerlayout = new BorderPane();
         headerlayout.setPadding(new Insets(20,30,0,30));
+        headerlayout.setStyle("-fx-background-color: #1d1d1d;");
 
         Label label = new Label("Welcome to Classroom Popcorn");
         label.setFont(new Font("Cambria", 32));
@@ -26,7 +27,7 @@ public class header {
         headerlayout.setLeft(label);
 
         HBox headerVB = new HBox();
-        headerVB.setPadding(new Insets(10,10,0,0));
+        headerVB.setPadding(new Insets(6,10,0,0));
         headerVB.setSpacing(-10);
 
         TextField name = new TextField();
@@ -34,6 +35,7 @@ public class header {
         name.setPrefColumnCount(15);
 
         Button quickSearch = GlyphsDude.createIconButton(FontAwesomeIcon.SEARCH);
+        quickSearch.setStyle("-fx-background-color: #fff;");
         Tooltip text = new Tooltip("Quick Search");
         new hackTooltipStartTiming(text);
         quickSearch.setTooltip(text);
