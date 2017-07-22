@@ -22,6 +22,7 @@ public class centerSearch {
         searchVB.setAlignment(Pos.TOP_CENTER);
 
         Label searchLabel = new Label("Search Term: ");
+        searchLabel.setTextFill(Color.web("#fff"));
         searchLabel.setFont(new Font("Cambria", 25));
         searchLabel.setTextFill(Color.web("#5a5a5a"));
 
@@ -30,7 +31,8 @@ public class centerSearch {
         searchRow.setAlignment(Pos.TOP_CENTER);
 
         TextField searchBox = new TextField();
-        searchBox.setStyle("-fx-background-color: #a2a2a2;");
+        searchBox.setPromptText("By movie name, cast, director, etc.");
+//        searchBox.setStyle("-fx-background-color: #282828;");
         searchBox.setPrefColumnCount(35);
         searchBox.setPrefHeight(35);
 
@@ -50,7 +52,7 @@ public class centerSearch {
         genreLabel.setFont(new Font("Cambria", 20));
         genreLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox genreComboBox = new ComboBox();
-        genreComboBox.setStyle("-fx-background-color: #a2a2a2;");
+//        genreComboBox.setStyle("-fx-background-color: #282828;");
         genreComboBox.getItems().addAll(
                 "All",
                 "Absurdist/surreal/whimsical",
@@ -86,7 +88,7 @@ public class centerSearch {
         ratingLabel.setFont(new Font("Cambria", 20));
         ratingLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox ratingComboBox = new ComboBox();
-        ratingComboBox.setStyle("-fx-background-color: #a2a2a2;");
+//        ratingComboBox.setStyle("-fx-background-color: #282828;");
         ratingComboBox.getItems().addAll(
                 "All",
                 "9+",
@@ -107,7 +109,7 @@ public class centerSearch {
         orderLabel.setFont(new Font("Cambria", 20));
         orderLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox orderComboBox = new ComboBox();
-        orderComboBox.setStyle("-fx-background-color: #a2a2a2;");
+//        orderComboBox.setStyle("-fx-background-color: #282828;");
         orderComboBox.getItems().addAll(
                 "Latest",
                 "Oldest",
