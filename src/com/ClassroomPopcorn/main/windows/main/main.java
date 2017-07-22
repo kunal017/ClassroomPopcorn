@@ -1,10 +1,12 @@
 package com.ClassroomPopcorn.main.windows.main;
 
+import com.ClassroomPopcorn.main.functions.header;
+
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class main extends Application {
@@ -22,17 +24,10 @@ public class main extends Application {
         window=primaryStage;
         window.setTitle("Classroom Popcorn");
 
-        //creating menubar class object
-//        menubar mb= new menubar();
+        BorderPane topLayout = header.header();
 
         layout = new BorderPane();
-
-//        VBox header = new VBox(0);
-//        header.getChildren().add(mb.displayMenuBar());
-
-//        layout.setTop(header);
-
-//        layout.setCenter(SidebarPanel.side());
+        layout.setTop(topLayout);
 
         scene = new Scene(layout,600,500);
         window.setScene(scene);
