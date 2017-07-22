@@ -125,7 +125,14 @@ public class centerSearch {
         //=================================================================================
         searchVB.getChildren().addAll(searchLabel, searchRow, filterRow);
 
-        searchLayout.setCenter(searchVB);
+        final BorderPane searchResult = new BorderPane(mapMovieDetails.mapMovieDetails("","","",""));
+        searchButton.setOnAction(e->{
+            searchResult.getChildren().clear();
+            searchResult.setCenter(mapMovieDetails.mapMovieDetails(searchBox.getText(),"","",""));
+        });
+
+        searchLayout.setTop(searchVB);
+        searchLayout.setBottom(searchResult);
 
         return searchLayout;
     }

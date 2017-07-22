@@ -33,7 +33,7 @@ public class main extends Application {
         scene = new Scene(layout,800,500);
         window.setScene(scene);
 
-        scene.getStylesheets().add(main.class.getResource("../../resources/css/home.css").toExternalForm());
+        scene.getStylesheets().add(main.class.getResource("../../resources/css/main.css").toExternalForm());
         window.getIcons().add(new Image(getClass().getResourceAsStream("../../resources/images/ClassroomPopcorn.png")));
 
         window.setMinWidth(750);
