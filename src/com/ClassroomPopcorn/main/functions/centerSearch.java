@@ -125,10 +125,10 @@ public class centerSearch {
         //=================================================================================
         searchVB.getChildren().addAll(searchLabel, searchRow, filterRow);
 
-        final BorderPane searchResult = new BorderPane(mapMovieDetails.mapMovieDetails("","","",""));
+        final BorderPane searchResult = new BorderPane(mapMovieDetails.mapMovieDetails("hachi",null,null,null));
         searchButton.setOnAction(e->{
             searchResult.getChildren().clear();
-            searchResult.setCenter(mapMovieDetails.mapMovieDetails(searchBox.getText(),"","",""));
+            searchResult.setCenter(mapMovieDetails.mapMovieDetails(searchBox.getText(),null,null,null));
         });
 
         searchLayout.setTop(searchVB);

@@ -16,8 +16,8 @@ public class mapMovieDetails {
         try {
             ResultSet searchResult = movieDetails.movieDetails(keyword,genreFilter,ratingFilter,orderFilter);
             searchResult.next();
-            String ids = searchResult.getString("idmovieDetail");
-            Label searchLength = new Label(ids.length()+" movies found from DB");
+            String ids = searchResult.getString("movieName");
+            Label searchLength = new Label(ids+" movies found from DB");
 
             movies.setCenter(searchLength);
         }catch (SQLException sql) {

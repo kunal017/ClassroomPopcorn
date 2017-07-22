@@ -15,18 +15,23 @@ public class movieDetails {
         PreparedStatement stmtt = null;
         ResultSet rs = null;
 
+        String query;
+        if (keyword==null)
+            query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail","");
+        else
+            query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail", "movieName LIKE '%"+keyword+"%'");
+
         try {
             conn = DBUtils.getConnection();
-            System.out.println("Connection "+conn);
-            stmtt = conn.prepareStatement("SELECT * FROM `classroompopcorn`.`moviedetail`;");
+            stmtt = conn.prepareStatement(query);
+            System.out.println("stmtt: "+stmtt);
             rs = stmtt.executeQuery();
-            String 
+
             return rs;
         } catch (SQLException sql) {
             sql.printStackTrace();
         } finally {
-            DBUtils.closeStatement(stmtt);
-            DBUtils.closeConnection(conn);
+//            DBUtils.closeAll(rs,stmtt,conn);
         }
         return rs;
     }
