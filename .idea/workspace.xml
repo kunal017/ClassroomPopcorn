@@ -2,8 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb4f0844-a678-4a9f-a5f2-332a5ee99952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesome.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sql.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/database/closeWIndow/setCloseCheck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/database/utils/DBUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/main/resources/css/caspian.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/main/resources/css/close.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/main/resources/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/main/resources/images/ClassroomPopcorn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/main/windows/main/main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/com/ClassroomPopcorn/utils/property.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Array.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/BatchUpdateException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Blob.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/CallableStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/ClientInfoStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Clob.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Connection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DataTruncation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DatabaseMetaData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Date.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Driver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/DriverPropertyInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/JDBCType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/NClob.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/ParameterMetaData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/PreparedStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/PseudoColumnUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Ref.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/ResultSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/ResultSetMetaData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/RowId.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/RowIdLifetime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLClientInfoException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLException$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLFeatureNotSupportedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLInput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLIntegrityConstraintViolationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLInvalidAuthorizationSpecException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLNonTransientConnectionException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLNonTransientException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLOutput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLPermission.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLRecoverableException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLSyntaxErrorException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLTimeoutException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLTransactionRollbackException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLTransientConnectionException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLTransientException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLWarning.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/SQLXML.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Savepoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Statement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Struct.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Time.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Timestamp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Types.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/java/sql/Wrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/CommonDataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/ConnectionEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/ConnectionEventListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/ConnectionPoolDataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/DataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/PooledConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetInternal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetMetaData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/RowSetWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/StatementEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/StatementEventListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/XAConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/XADataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/BaseRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/CachedRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/FilteredRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/JdbcRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/JoinRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/Joinable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/Predicate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetMetaDataImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetMetaDataImpl$ColInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetMetaDataImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetProvider$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetProvider$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/RowSetWarning.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/WebRowSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SQLInputImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SQLOutputImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialBlob.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialClob.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialDatalink.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialJavaObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/serial/SerialStruct.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/ProviderImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncFactory$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncFactory$SyncFactoryHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncFactoryException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncProviderException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/SyncResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/TransactionalWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/XmlReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/javax/sql/rowset/spi/XmlWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/lib/fontawesome/fontawesomefx-8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ClassroomPopcorn/lib/sql/mysql-connector-java-5.1.41-bin.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClassroomPopcorn.iml" afterPath="$PROJECT_DIR$/ClassroomPopcorn.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +152,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ClassroomPopcorn/main/windows/main/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+              <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassroomPopcorn.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ClassroomPopcorn.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,6 +215,7 @@
         <option value="$PROJECT_DIR$/src/com/ClassroomPopcorn/database/closeWIndow/setCloseCheck.java" />
         <option value="$PROJECT_DIR$/src/com/ClassroomPopcorn/database/utils/DBUtils.java" />
         <option value="$PROJECT_DIR$/src/com/ClassroomPopcorn/main/windows/main/main.java" />
+        <option value="$PROJECT_DIR$/ClassroomPopcorn.iml" />
       </list>
     </option>
   </component>
@@ -132,150 +264,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassroomPopcorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closeWIndow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,7 +543,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -580,7 +568,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Running Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -643,10 +631,18 @@
     <entry file="file://$PROJECT_DIR$/src/com/ClassroomPopcorn/main/windows/main/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassroomPopcorn.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
