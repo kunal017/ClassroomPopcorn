@@ -1,5 +1,7 @@
 package com.ClassroomPopcorn.main.functions;
 
+import com.ClassroomPopcorn.database.logIn.userLoggedIn;
+import com.ClassroomPopcorn.database.signIn.userSignOut;
 import com.ClassroomPopcorn.main.windows.login.userLogin;
 import com.ClassroomPopcorn.main.windows.signUp.userSignUp;
 
@@ -88,10 +90,17 @@ public class header {
         logout.setOnMouseClicked(e-> {
             headerVB.getChildren().clear();
             headerVB.getChildren().addAll(login,register);
+            userSignOut.userSignOut();
         });
 
-        //If user not logged in
-        if (!false){
+        String[] status = userLoggedIn.userLoggedIn();
+        if (status[0]=="success") {
+            username.setText(status[1]);
+
+            headerVB.getChildren().clear();
+            headerVB.getChildren().addAll(username,logout);
+        }
+        else {
             headerVB.getChildren().clear();
             headerVB.getChildren().addAll(login,register);
         }

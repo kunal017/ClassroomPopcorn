@@ -44,8 +44,10 @@ public class movieDetails {
             rs.beforeFirst();
 
             String movieResultString;
-            if (size>0)
-                movieResultString = size + " movies on search in Database";
+            if (size==1)
+                movieResultString = "1 movie found on Database search";
+            else if (size>1)
+                movieResultString = size+" movies found on Database search";
             else
                 movieResultString = "No results found in Database";
 

@@ -13,6 +13,8 @@ public class dbSignUp {
         PreparedStatement stmt = null;
         String query = DBUtils.prepareInsertQuery("classroompopcorn.userdetail", "fullName, username, emailId, password", "?,?,?,?");
 
+        String updateCurrentUserQuery = DBUtils.prepareInsertQuery("classroompopcorn.currentuserlog", "username, fullName, loggedIn", "?,?,?");
+
         String[] status = {"ongoing","username"};
 
         try{
@@ -25,6 +27,12 @@ public class dbSignUp {
             stmt.executeUpdate();
             status[0]="success";
             status[1]=fullName;
+
+            stmt = con.prepareStatement(updateCurrentUserQuery);
+            stmt.setString(1, userName);
+            stmt.setString(2, status[1]);
+            stmt.setString(3, "1");
+            stmt.executeUpdate();
         }
         catch(Exception e){
             status[0] = e.getMessage();
