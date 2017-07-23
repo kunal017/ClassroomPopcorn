@@ -1,6 +1,8 @@
 package com.ClassroomPopcorn.main.windows.login;
 
+import com.ClassroomPopcorn.database.logIn.dbLoginCheck;
 import com.ClassroomPopcorn.main.windows.home.main;
+
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.geometry.Insets;
@@ -21,7 +23,9 @@ import javafx.stage.Stage;
 
 public class userLogin {
 
-    public String userLogin(){
+    public String[] status = {"",""};
+
+    public String[] userLogin(){
         final BooleanProperty firstTime = new SimpleBooleanProperty(true); // Variable to store the focus on stage load
 
         Stage loginStage = new Stage();
@@ -58,17 +62,34 @@ public class userLogin {
         password.setPromptText("password");
         password.setStyle("-fx-border-radius: 100");
 
-        vb.getChildren().addAll(username,password);
+        Label error = new Label();
+        error.setTextFill(Color.web("red"));
+
+        vb.getChildren().addAll(username,password, error);
 
         loginPane.setCenter(vb);
 
         HBox loginRow = new HBox();
-        Button loginButtton = new Button("Login");
-        loginButtton.setFont(new Font("Cambria", 18));
-        loginButtton.setStyle("-fx-focus-color: transparent;-fx-background-color: #6ac045;");
-        loginButtton.setTextFill(Color.web("#fff"));
-        loginRow.getChildren().addAll(loginButtton);
+        Button loginButton = new Button("Login");
+        loginButton.setFont(new Font("Cambria", 18));
+        loginButton.setStyle("-fx-focus-color: transparent;-fx-background-color: #6ac045;");
+        loginButton.setTextFill(Color.web("#fff"));
+        loginRow.getChildren().addAll(loginButton);
         loginRow.setAlignment(Pos.BASELINE_CENTER);
+
+        loginButton.setOnAction(e-> {
+            if (username.getText().isEmpty())
+                error.setText("Username or EmailId can't be empty");
+            else if (password.getText().isEmpty())
+                error.setText("Password can't be empty");
+            else{
+                status = dbLoginCheck.dbLoginCheck(username.getText(),password.getText());
+                if (status[0]=="success")
+                    loginStage.close();
+                else
+                    error.setText("Incorrect Username / Email Id or password !");
+            }
+        });
 
         loginPane.setBottom(loginRow);
 
@@ -81,8 +102,7 @@ public class userLogin {
         loginStage.setResizable(false);
         loginStage.showAndWait();
 
-        if (true)
-            return "Shubham Madheysia";
-        else return "";
+        return status;
     }
+
 }

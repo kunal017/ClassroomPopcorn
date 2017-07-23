@@ -63,10 +63,10 @@ public class header {
 
         login.setOnMouseClicked(e->{
             userLogin ob = new userLogin();
-            String name = ob.userLogin();
+            String[] status = ob.userLogin();
 
-            if (!name.equals("")){
-                username.setText(name);
+            if (status[0].equals("success")){
+                username.setText(status[1]);
 
                 headerVB.getChildren().clear();
                 headerVB.getChildren().addAll(username,logout);
