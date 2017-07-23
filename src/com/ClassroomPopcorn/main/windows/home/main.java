@@ -4,6 +4,7 @@ import com.ClassroomPopcorn.main.functions.*;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -23,6 +24,7 @@ public class main extends Application {
         window=primaryStage;
         window.setTitle("Classroom Popcorn");
 
+        ScrollPane mainScreen = new ScrollPane();
         BorderPane topLayout = header.header();
         BorderPane centerLayout = centerSearch.centerSearch();
 
@@ -30,7 +32,11 @@ public class main extends Application {
         layout.setTop(topLayout);
         layout.setCenter(centerLayout);
 
-        scene = new Scene(layout,800,500);
+        mainScreen.setContent(layout);
+        mainScreen.setFitToWidth(true);
+        mainScreen.setFitToHeight(true);
+
+        scene = new Scene(mainScreen,800,500);
         window.setScene(scene);
 
         scene.getStylesheets().add(main.class.getResource("../../resources/css/main.css").toExternalForm());

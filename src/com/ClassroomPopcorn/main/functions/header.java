@@ -31,10 +31,12 @@ public class header {
         headerVB.setSpacing(-10);
 
         TextField name = new TextField();
+        name.setStyle("-fx-focus-color: white;-fx-border-radius: 50");
         name.setPromptText("Movie name");
         name.setPrefColumnCount(15);
 
         Button quickSearch = GlyphsDude.createIconButton(FontAwesomeIcon.SEARCH);
+        quickSearch.setStyle("-fx-focus-color: white;-fx-border-radius: 50");
         quickSearch.setStyle("-fx-background-color: #fff;");
         Tooltip text = new Tooltip("Quick Search");
         new hackTooltipStartTiming(text);

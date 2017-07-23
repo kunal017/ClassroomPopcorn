@@ -1,6 +1,16 @@
 package com.ClassroomPopcorn.database.getMovies;
 
 import com.ClassroomPopcorn.database.utils.DBUtils;
+import com.ClassroomPopcorn.main.functions.movieTemplate;
+
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +19,11 @@ import java.sql.SQLException;
 
 public class movieDetails {
 
-    public static ResultSet movieDetails(String keyword, String genreFilter, String ratingFilter, String orderFilder){
+    public static StackPane movieDetails(String keyword, String genreFilter, String ratingFilter, String orderFilder){
+
+        StackPane movieResults = new StackPane();
+        VBox verticalTemplates = new VBox(10);
+        verticalTemplates.setPadding(new Insets(30,0,0,0));
 
         Connection conn = null;
         PreparedStatement stmtt = null;
@@ -24,16 +38,40 @@ public class movieDetails {
         try {
             conn = DBUtils.getConnection();
             stmtt = conn.prepareStatement(query);
-            System.out.println("stmtt: "+stmtt);
             rs = stmtt.executeQuery();
+            rs.last();
+            int size = rs.getRow();
+            rs.beforeFirst();
 
-            return rs;
+            String movieResultString;
+            if (size>0)
+                movieResultString = size + " movies on search in Database";
+            else
+                movieResultString = "No results found in Database";
+
+            Label name = new Label(movieResultString);
+            name.setFont(new Font("Cambria", 20));
+            name.setTextFill(Color.web("#6ac045"));
+            name.setAlignment(Pos.TOP_CENTER);
+
+            verticalTemplates.getChildren().add(name);
+
+            while (rs.next()){
+                String movieName = rs.getString("movieName");
+                String movieImageURL = rs.getString("ImageURL");
+                int yearOfRelease = rs.getInt("yearOfRelease");
+                String genre = rs.getString("genre");
+                double IMDB = rs.getDouble("IMDB");
+                int downloads = rs.getInt("downloads");
+                BorderPane appendTemplate = movieTemplate.movieTemplate(movieName, movieImageURL, yearOfRelease, genre, IMDB, downloads);
+                verticalTemplates.getChildren().add(appendTemplate);
+            }
+            movieResults.getChildren().add(verticalTemplates);
         } catch (SQLException sql) {
             sql.printStackTrace();
         } finally {
-//            DBUtils.closeAll(rs,stmtt,conn);
+            DBUtils.closeAll(rs,stmtt,conn);
         }
-        return rs;
+        return movieResults;
     }
-
 }

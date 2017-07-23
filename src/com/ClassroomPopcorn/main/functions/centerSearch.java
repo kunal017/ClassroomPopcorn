@@ -1,5 +1,8 @@
 package com.ClassroomPopcorn.main.functions;
 
+import com.ClassroomPopcorn.database.getMovies.movieDetails;
+
+
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -8,13 +11,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 
 public class centerSearch {
 
     public static BorderPane centerSearch(){
         BorderPane searchLayout = new BorderPane();
-        searchLayout.setPadding(new Insets(70,20,40,20));
+        searchLayout.setPadding(new Insets(70,0,0,0));
         searchLayout.setStyle("-fx-background-color: #171717;");
 
         //=================================================================================
@@ -32,11 +34,13 @@ public class centerSearch {
 
         TextField searchBox = new TextField();
         searchBox.setPromptText("By movie name, cast, director, etc.");
+        searchBox.setStyle("-fx-focus-color: transparent;");
 //        searchBox.setStyle("-fx-background-color: #282828;");
         searchBox.setPrefColumnCount(35);
         searchBox.setPrefHeight(35);
 
         Button searchButton = new Button("Search");
+        searchButton.setStyle("-fx-focus-color: transparent;");
         searchButton.setFont(new Font("Cambria", 18));
         searchButton.setStyle("-fx-background-color: #6ac045;");
         searchButton.setTextFill(Color.web("#fff"));
@@ -124,12 +128,15 @@ public class centerSearch {
 
         //=================================================================================
         searchVB.getChildren().addAll(searchLabel, searchRow, filterRow);
+        searchVB.setPadding(new Insets(0,0,50,0));
 
-        final BorderPane searchResult = new BorderPane(mapMovieDetails.mapMovieDetails("hachi",null,null,null));
+        final BorderPane searchResult = new BorderPane(movieDetails.movieDetails(null,null,null,null));
         searchButton.setOnAction(e->{
             searchResult.getChildren().clear();
-            searchResult.setCenter(mapMovieDetails.mapMovieDetails(searchBox.getText(),null,null,null));
+            searchResult.setCenter(movieDetails.movieDetails(searchBox.getText(),null,null,null));
         });
+        searchResult.setStyle("-fx-background-color: #1d1d1d;");
+        searchResult.setPadding(new Insets(0,100,20,100));
 
         searchLayout.setTop(searchVB);
         searchLayout.setBottom(searchResult);
