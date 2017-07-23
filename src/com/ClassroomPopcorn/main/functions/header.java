@@ -75,10 +75,10 @@ public class header {
 
         register.setOnMouseClicked(e->{
             userSignUp ob = new userSignUp();
-            String name = ob.userSignUp();
+            String[] status = ob.userSignUp();
 
-            if (!name.equals("")){
-                username.setText(name);
+            if (status[0].equals("success")){
+                username.setText(status[1]);
 
                 headerVB.getChildren().clear();
                 headerVB.getChildren().addAll(username,logout);
