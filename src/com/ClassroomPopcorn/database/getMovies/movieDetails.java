@@ -60,12 +60,20 @@ public class movieDetails {
 
             while (rs.next()){
                 String movieName = rs.getString("movieName");
-                String movieImageURL = rs.getString("ImageURL");
                 int yearOfRelease = rs.getInt("yearOfRelease");
                 String genre = rs.getString("genre");
                 double IMDB = rs.getDouble("IMDB");
+                int likes = rs.getInt("likes");
                 int downloads = rs.getInt("downloads");
-                BorderPane appendTemplate = movieTemplate.movieTemplate(movieName, movieImageURL, yearOfRelease, genre, IMDB, downloads);
+                String description = rs.getString("description");
+                String director = rs.getString("director");
+                String cast = rs.getString("cast");
+                String movieLink = rs.getString("movieLink");
+                String trailerLink = rs.getString("trailerLink");
+                String movieImageURL = rs.getString("ImageURL");
+
+                BorderPane appendTemplate = movieTemplate.movieTemplate(movieName, yearOfRelease, genre, IMDB, likes, downloads, description, director, cast, movieLink, trailerLink, movieImageURL);
+
                 verticalTemplates.getChildren().add(appendTemplate);
             }
             movieResults.getChildren().add(verticalTemplates);
