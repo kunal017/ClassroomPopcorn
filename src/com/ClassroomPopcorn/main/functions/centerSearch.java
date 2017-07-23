@@ -3,6 +3,8 @@ package com.ClassroomPopcorn.main.functions;
 import com.ClassroomPopcorn.database.getMovies.movieDetails;
 
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -15,6 +17,8 @@ import javafx.scene.text.Font;
 public class centerSearch {
 
     public static BorderPane centerSearch(){
+        final BooleanProperty firstTime = new SimpleBooleanProperty(true); // Variable to store the focus on stage load
+
         BorderPane searchLayout = new BorderPane();
         searchLayout.setPadding(new Insets(70,0,0,0));
         searchLayout.setStyle("-fx-background-color: #171717;");
@@ -38,6 +42,12 @@ public class centerSearch {
 //        searchBox.setStyle("-fx-background-color: #282828;");
         searchBox.setPrefColumnCount(35);
         searchBox.setPrefHeight(35);
+        searchBox.focusedProperty().addListener((observable,  oldValue,  newValue) -> {
+            if(newValue && firstTime.get()){
+                searchLayout.requestFocus(); // Delegate the focus to container
+                firstTime.setValue(false); // Variable value changed for future references
+            }
+        });
 
         Button searchButton = new Button("Search");
         searchButton.setStyle("-fx-focus-color: transparent;");
