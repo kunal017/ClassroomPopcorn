@@ -1,4 +1,4 @@
-package com.ClassroomPopcorn.main.functions;
+package com.ClassroomPopcorn.main.template;
 
 import com.ClassroomPopcorn.main.windows.movie.movieOnline;
 
@@ -6,7 +6,7 @@ import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
+import javafx.scene.Cursor;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -17,7 +17,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 
-public class movieTemplate {
+public class searchMovie {
 
     public static BorderPane movieTemplate(String movieName, int yearOfRelease, String genre, double IMDB, int likes, int downloads, String description, String director, String cast, String movieLink, String trailerLink, String movieImageURL){
         BorderPane movies = new BorderPane();
@@ -71,6 +71,7 @@ public class movieTemplate {
             ob.movieOnline(movieName, yearOfRelease, genre, IMDB, likes, downloads, description, director, cast, movieLink, trailerLink, movieImageURL);
         });
 
+        movies.setCursor(Cursor.HAND);
         return movies;
     }
 }

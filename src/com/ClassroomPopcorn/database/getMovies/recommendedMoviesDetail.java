@@ -1,13 +1,12 @@
 package com.ClassroomPopcorn.database.getMovies;
 
 import com.ClassroomPopcorn.database.utils.DBUtils;
-import com.ClassroomPopcorn.main.template.searchMovie;
-
+import com.ClassroomPopcorn.main.template.recommendedMovie;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -17,42 +16,35 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class movieDetails {
+public class recommendedMoviesDetail {
 
-    public static StackPane movieDetails(String condition){
+    public static BorderPane movies(String userId){
+        BorderPane movieResults = new BorderPane();
+        movieResults.setPadding(new Insets(0,20,0,0));
 
-        StackPane movieResults = new StackPane();
         VBox verticalTemplates = new VBox(10);
-        verticalTemplates.setPadding(new Insets(30,0,0,0));
+        verticalTemplates.setAlignment(Pos.TOP_LEFT);
+
+        Label searchLabel = new Label("Recommended Movies ");
+        searchLabel.setFont(new Font("Cambria", 20));
+        searchLabel.setTextFill(Color.web("#5a5a5a"));
+
+        verticalTemplates.getChildren().addAll(searchLabel);
+
+        HBox horizontalBoxFirst = new HBox(20);
+        HBox horizontalBoxSecond = new HBox(20);
 
         Connection conn = null;
         PreparedStatement stmtt = null;
         ResultSet rs = null;
 
-        String query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail", "", condition+"");
+        String query = DBUtils.prepareSelectQuery("", "classroompopcorn.recomendedmovies", "userId = "+userId);
 
+        int count = 0;
         try {
             conn = DBUtils.getConnection();
             stmtt = conn.prepareStatement(query);
             rs = stmtt.executeQuery();
-            rs.last();
-            int size = rs.getRow();
-            rs.beforeFirst();
-
-            String movieResultString;
-            if (size==1)
-                movieResultString = "1 movie found on Database search";
-            else if (size>1)
-                movieResultString = size+" movies found on Database search";
-            else
-                movieResultString = "No results found in Database";
-
-            Label name = new Label(movieResultString);
-            name.setFont(new Font("Cambria", 20));
-            name.setTextFill(Color.web("#6ac045"));
-            name.setAlignment(Pos.TOP_CENTER);
-
-            verticalTemplates.getChildren().add(name);
 
             while (rs.next()){
                 String movieName = rs.getString("movieName");
@@ -68,11 +60,17 @@ public class movieDetails {
                 String trailerLink = rs.getString("trailerLink");
                 String movieImageURL = rs.getString("ImageURL");
 
-                BorderPane appendTemplate = searchMovie.movieTemplate(movieName, yearOfRelease, genre, IMDB, likes, downloads, description, director, cast, movieLink, trailerLink, movieImageURL);
+                BorderPane appendTemplate = recommendedMovie.movieTemplate(movieName, yearOfRelease, genre, IMDB, likes, downloads, description, director, cast, movieLink, trailerLink, movieImageURL);
 
-                verticalTemplates.getChildren().add(appendTemplate);
+                if (count++<2)
+                    horizontalBoxFirst.getChildren().add(appendTemplate);
+                else
+                    horizontalBoxSecond.getChildren().add(appendTemplate);
             }
-            movieResults.getChildren().add(verticalTemplates);
+
+            verticalTemplates.getChildren().addAll(horizontalBoxFirst,horizontalBoxSecond);
+            movieResults.setCenter(verticalTemplates);
+
         } catch (SQLException sql) {
             sql.printStackTrace();
         } finally {

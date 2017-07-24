@@ -4,6 +4,7 @@ import com.ClassroomPopcorn.database.getMovies.movieDetails;
 import com.ClassroomPopcorn.main.windows.home.main;
 
 
+import javafx.scene.Cursor;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.beans.property.BooleanProperty;
@@ -56,6 +57,7 @@ public class centerSearch {
         searchButton.setFont(new Font("Cambria", 18));
         searchButton.setStyle("-fx-background-color: #6ac045;");
         searchButton.setTextFill(Color.web("#fff"));
+        searchButton.setCursor(Cursor.HAND);
 
         main.scene.getAccelerators().put(
                 new KeyCodeCombination(KeyCode.ENTER),
@@ -170,7 +172,7 @@ public class centerSearch {
             else if (orderBy.equals("Likes"))
                 condition = condition + " ORDER BY likes desc";
             else if (orderBy.equals("Alphabetical"))
-                condition = condition + " ORDER BY movieName desc";
+                condition = condition + " ORDER BY movieName asc";
             else if (orderBy.equals("Downloads"))
                 condition = condition + " ORDER BY downloads desc";
 
