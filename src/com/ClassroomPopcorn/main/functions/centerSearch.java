@@ -1,8 +1,11 @@
 package com.ClassroomPopcorn.main.functions;
 
 import com.ClassroomPopcorn.database.getMovies.movieDetails;
+import com.ClassroomPopcorn.main.windows.home.main;
 
 
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.geometry.Insets;
@@ -39,7 +42,6 @@ public class centerSearch {
         TextField searchBox = new TextField();
         searchBox.setPromptText("By movie name, cast, director, etc.");
         searchBox.setStyle("-fx-focus-color: transparent;");
-//        searchBox.setStyle("-fx-background-color: #282828;");
         searchBox.setPrefColumnCount(35);
         searchBox.setPrefHeight(35);
         searchBox.focusedProperty().addListener((observable,  oldValue,  newValue) -> {
@@ -55,6 +57,11 @@ public class centerSearch {
         searchButton.setStyle("-fx-background-color: #6ac045;");
         searchButton.setTextFill(Color.web("#fff"));
 
+        main.scene.getAccelerators().put(
+                new KeyCodeCombination(KeyCode.ENTER),
+                () -> searchButton.fire()
+        );
+
         searchRow.getChildren().addAll(searchBox,searchButton);
 
         //=================================================================================
@@ -66,7 +73,6 @@ public class centerSearch {
         genreLabel.setFont(new Font("Cambria", 20));
         genreLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox genreComboBox = new ComboBox();
-//        genreComboBox.setStyle("-fx-background-color: #282828;");
         genreComboBox.getItems().addAll(
                 "All",
                 "Absurdist/surreal/whimsical",
@@ -102,7 +108,6 @@ public class centerSearch {
         ratingLabel.setFont(new Font("Cambria", 20));
         ratingLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox ratingComboBox = new ComboBox();
-//        ratingComboBox.setStyle("-fx-background-color: #282828;");
         ratingComboBox.getItems().addAll(
                 "All",
                 "9+",
@@ -123,7 +128,6 @@ public class centerSearch {
         orderLabel.setFont(new Font("Cambria", 20));
         orderLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox orderComboBox = new ComboBox();
-//        orderComboBox.setStyle("-fx-background-color: #282828;");
         orderComboBox.getItems().addAll(
                 "Latest",
                 "Oldest",
@@ -140,10 +144,40 @@ public class centerSearch {
         searchVB.getChildren().addAll(searchLabel, searchRow, filterRow);
         searchVB.setPadding(new Insets(0,0,50,0));
 
-        final BorderPane searchResult = new BorderPane(movieDetails.movieDetails(null,null,null,null));
+        final BorderPane searchResult = new BorderPane(movieDetails.movieDetails("ORDER BY yearOfRelease desc"));
         searchButton.setOnAction(e->{
+
+            String condition;
+            String genre = genreComboBox.getValue().toString();
+            genre = genre.equals("All") ? "" : genre;
+
+            String rate = ratingComboBox.getValue().toString();
+            rate = rate.charAt(0)=='A' ? "1" :  rate.charAt(0)+"";
+
+            if (genre.equals(""))
+                condition="WHERE IMDB>"+rate;
+            else
+                condition="WHERE IMDB>"+rate+" AND genre LIKE '%"+genre+"%'";
+
+            if (!searchBox.getText().isEmpty())
+                condition = condition+" AND movieName LIKE '%"+searchBox.getText()+"%'";
+
+            String orderBy = orderComboBox.getValue().toString();
+            if (orderBy.equals("Latest"))
+                condition = condition + " ORDER BY yearOfRelease desc";
+            else if (orderBy.equals("Oldest"))
+                condition = condition + " ORDER BY yearOfRelease asc";
+            else if (orderBy.equals("Likes"))
+                condition = condition + " ORDER BY likes desc";
+            else if (orderBy.equals("Alphabetical"))
+                condition = condition + " ORDER BY movieName desc";
+            else if (orderBy.equals("Downloads"))
+                condition = condition + " ORDER BY downloads desc";
+
             searchResult.getChildren().clear();
-            searchResult.setCenter(movieDetails.movieDetails(searchBox.getText(),null,null,null));
+            searchResult.setCenter(movieDetails.movieDetails(condition));
+
+            searchBox.requestFocus(); // Delegate the focus to container
         });
         searchResult.setStyle("-fx-background-color: #1d1d1d;");
         searchResult.setPadding(new Insets(0,100,20,100));

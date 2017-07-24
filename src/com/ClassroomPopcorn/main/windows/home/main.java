@@ -25,6 +25,8 @@ public class main extends Application {
         window.setTitle("Classroom Popcorn");
 
         ScrollPane mainScreen = new ScrollPane();
+        scene = new Scene(mainScreen,800,500);
+
         BorderPane topLayout = header.header();
         BorderPane centerLayout = centerSearch.centerSearch();
 
@@ -36,7 +38,6 @@ public class main extends Application {
         mainScreen.setFitToWidth(true);
         mainScreen.setFitToHeight(true);
 
-        scene = new Scene(mainScreen,800,500);
         window.setScene(scene);
 
         scene.getStylesheets().add(main.class.getResource("../../resources/css/main.css").toExternalForm());

@@ -19,7 +19,7 @@ import java.sql.SQLException;
 
 public class movieDetails {
 
-    public static StackPane movieDetails(String keyword, String genreFilter, String ratingFilter, String orderFilder){
+    public static StackPane movieDetails(String condition){
 
         StackPane movieResults = new StackPane();
         VBox verticalTemplates = new VBox(10);
@@ -29,11 +29,7 @@ public class movieDetails {
         PreparedStatement stmtt = null;
         ResultSet rs = null;
 
-        String query;
-        if (keyword==null)
-            query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail","");
-        else
-            query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail", "movieName LIKE '%"+keyword+"%'");
+        String query = DBUtils.prepareSelectQuery("", "classroompopcorn.moviedetail", "", condition+"");
 
         try {
             conn = DBUtils.getConnection();

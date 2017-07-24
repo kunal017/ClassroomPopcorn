@@ -118,6 +118,10 @@ public class DBUtils {
         return -1;
     }
 
+    public static String prepareSelectQuery(String columns,String tableName){
+        return "SELECT " + columns + " FROM " + tableName;
+    }
+
     public static String prepareSelectQuery(String columns,String tableName, String whereClause){
         if(columns.isEmpty())
             columns = "*";
