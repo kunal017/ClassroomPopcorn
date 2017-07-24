@@ -90,7 +90,14 @@ public class movieOnline {
 
         movieDetails.setCenter(info);
 
-        movieDetails.setRight(recommendedMoviesDetail.movies("1"));
+        BorderPane recommendation = recommendedMoviesDetail.movies("1");
+        movieWindow.widthProperty().addListener(e-> {
+            if (movieWindow.getWidth()<1100)
+                movieDetails.setRight(new Label());
+            else
+                movieDetails.setRight(recommendation);
+        });
+        movieDetails.setRight(recommendation);
 
         HBox hbBottom = new HBox(50);
         hbBottom.setPadding(new Insets(30,0,0,0));
