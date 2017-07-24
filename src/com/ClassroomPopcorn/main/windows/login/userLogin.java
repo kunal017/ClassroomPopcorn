@@ -13,6 +13,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -94,6 +96,10 @@ public class userLogin {
         loginPane.setBottom(loginRow);
 
         Scene loginScene = new Scene(loginPane,400,300);
+        loginScene.getAccelerators().put(
+                new KeyCodeCombination(KeyCode.ENTER),
+                () -> loginButton.fire()
+        );
 
         loginScene.getStylesheets().add(main.class.getResource("../../resources/css/main.css").toExternalForm());
         loginStage.getIcons().add(new Image(getClass().getResourceAsStream("../../resources/images/ClassroomPopcorn.png")));
