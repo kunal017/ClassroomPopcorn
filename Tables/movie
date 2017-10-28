@@ -2,7 +2,7 @@ insert into Movie values("mm0001","Queen","2014",9.2,"Rani, a 24-year-old homely
 ");
 insert into Movie values("mm0002","Anand","1971",8.8,"Anand, a cancer patient, lives his life to the fullest. He fills everyone's life with happiness, which inspires his doctor, Bhaskar, to write a book on his life.");
 insert into Movie values("mm0003","Andaz Apna Apna","1994",8.7,"Amar and Prem belong to middle-class families but dream big. Both of them vie to win over Raveena, a multi-millionaire's daughter. Along the way, they run into a local gangster, Teja.");
-insert into Movie values("mm0004","Gangs Of Wasseypur","201",8.6,"A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).");
+insert into Movie values("mm0004","Gangs Of Wasseypur","2011",8.6,"A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).");
 insert into Movie values("mm0005","Taare Zameen Par","2007",8.6,"Ishaan cannot seem to get anything right at his boarding school. Soon, a new unconventional art teacher, Ram Shankar Nikumbh, helps the dyslexic student discover his hidden potential.");
 insert into Movie values("mm0006","Rang De Basanti","2006",8.6,"When Sue selects a few students to portray various Indian freedom fighters in her film, she unwittingly awakens their patriotism. The emotional and mental process turns them into rebels for a cause.
 ");
