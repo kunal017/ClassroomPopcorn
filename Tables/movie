@@ -1,0 +1,52 @@
+insert into Movie values("mm0001","Queen","2014",9.2,"Rani, a 24-year-old homely girl, decides to go on her honeymoon alone when her fiance calls off their wedding. Travelling around Europe, she finds joy, makes friends and gains new-found independence.
+");
+insert into Movie values("mm0002","Anand","1971",8.8,"Anand, a cancer patient, lives his life to the fullest. He fills everyone's life with happiness, which inspires his doctor, Bhaskar, to write a book on his life.");
+insert into Movie values("mm0003","Andaz Apna Apna","1994",8.7,"Amar and Prem belong to middle-class families but dream big. Both of them vie to win over Raveena, a multi-millionaire's daughter. Along the way, they run into a local gangster, Teja.");
+insert into Movie values("mm0004","Gangs Of Wasseypur","201",8.6,"A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).");
+insert into Movie values("mm0005","Taare Zameen Par","2007",8.6,"Ishaan cannot seem to get anything right at his boarding school. Soon, a new unconventional art teacher, Ram Shankar Nikumbh, helps the dyslexic student discover his hidden potential.");
+insert into Movie values("mm0006","Rang De Basanti","2006",8.6,"When Sue selects a few students to portray various Indian freedom fighters in her film, she unwittingly awakens their patriotism. The emotional and mental process turns them into rebels for a cause.
+");
+insert into Movie values("mm0007","Dil Chahta Hai","2001",8.6,"Three friends who share a deep bond are separated due to their different approaches towards relationships. Akash goes to Australia, Sameer gets busy wooing a girl and Siddharth devotes himself to art.
+");
+insert into Movie values("mm0008","Sholay","1975",8.6,"Jai and Veeru, two small-time crooks, are hired by Thakur Baldev Singh, a retired policeman, to help him nab Gabbar Singh, a notorious dacoit, who has spread havoc in the village of Ramgarh.
+");
+insert into Movie values("mm0009","The Bastard Child","2013",8.5,"Children of War, also known as The Bastard Child, is a 2014 Hindi drama film directed by Mrityunjay Devrat. The film released on 16 May 2014 in India.");
+insert into Movie values("mm0010","Bhaag Milkha Bhaag","2013",8.5,"Milkha Singh or the 'Flying Sikh' overcomes many agonising obstacles to become a world champion, Olympian and one of India's most iconic athletes.
+");
+insert into Movie values("mm0011","A Wednesday","2008",8.5,"A retired police commissioner recounts the most memorable case of his career wherein he was informed about a bomb scare in Mumbai.
+");
+insert into Movie values("mm0012","3 Idiots","2009",8.5,"In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.
+");
+insert into Movie values("mm0013","Black Friday","2004",8.4,"Black Friday is the day following Thanksgiving Day in the United States. Since 1952, it has been regarded as the beginning of the Christmas shopping season in the U.S., and most major retailers open very early and offer promotional sales.");
+insert into Movie values("mm0014","Barfi!","2012",8.3,"Shruti loves Barfi, a hearing and speech-impaired man, but marries someone else. Years later, she learns that he is in love with an autistic girl, and feels the need to rethink her own marriage.
+");
+insert into Movie values("mm0015","Black","2005",8.2,"Black is the darkest color, the result of the absence or complete absorption of visible light. It is an achromatic color, literally a color without hue, like white and gray.");
+insert into Movie values("mm0016","Dev.D","2009",8.1,"After breaking up with his childhood love Paro, Dev finds solace in drugs and alcohol. He soon bumps into Chanda, a prostitute, and falls for her.
+");
+insert into Movie values("mm0017","Dabba","2013",8.0,"School boy Stanley does not carry lunch, which is noticed by a teacher who forces kids to share their food with him. He soon warns Stanley that he must get a lunch box if he wants to attend school.
+");
+insert into Movie values("mm0018","Highway","2014",7.9,"Veera, a young bride-to-be, is abducted by a common goon, Mahabir, and his men a day prior to her wedding. Far from being terrified of her abductor, Veera discovers an adventurous and liberating life.
+");
+insert into Movie values("mm0019","Awaara","1951",7.9,"Raj, a small-time crook, kills his boss when he learns about his true identity. He is arrested for the crime and must now defend himself in front of his father, the judge of the court.
+");
+insert into Movie values("mm0020","Gangoobai","2013",7.8,"An elderly maid servant aspires to buy an extremely expensive Gara sari in Mumbai. In the process, she changes the lives of the people she interacts with.
+");
+insert into Movie values("mm0021","1971","2013",6.3,"A band of six Indian prisoners of the 1971 war try to make the most daring escape from a Pakistani camp to the Indian border, with the Pakistani officials in hot pursuit.
+");
+insert into Movie values("mm0022","Sehar","2005",7.8,"Ajay Kumar swears that he will eradicate every instance of crime from the state of Uttar Pradesh when he is appointed as the SSP of Lucknow. However, he faces friction from Gajraj.
+");
+insert into Movie values("mm0023","Raakh","1989",7.8,"Raakh is a 1989 Indian crime thriller film starring Aamir Khan and Supriya Pathak in the lead roles with Pankaj Kapur, Gajanan Bangera and Jagdeep. The revenge thriller film was directed by Aditya Bhattacharya, son of director Basu Bhattacharya. Wikipedia
+");
+insert into Movie values("mm0024","Sardar","1993",7.8,"Vallabhbhai Patel, born into a wealthy family, thinks of the freedom struggle in a negative light. On hearing Gandhi speak, he changes his mind and joins him.
+");
+insert into Movie values("mm0025","Water","2005",7.8,"Water is a transparent and nearly colorless chemical substance that is the main constituent of Earth's streams, lakes, and oceans, and the fluids of most living organisms.");
+insert into Movie values("mm0026","Aandhi","1975",7.8,"A hotel manager and a politician's daughter fall in love and get married. Due to certain differences, they get separated. Years later, they meet again and decide to give their relation another chance.
+");
+insert into Movie values("mm0027","Dosti","1964",7.8,"A series of unfortunate events cause a young boy to lose his parents and his legs. He is befriended by a blind boy and together they set out to use their talents to earn money.
+");
+insert into Movie values("mm0028","Maachis","1996",7.8,"Jaswant is arrested and tortured for a crime he did not commit. On seeing his friend's condition, Kripal joins an extremist group in order to bring down the government.
+");
+insert into Movie values("mm0029","Agneepath","1990",7.8,"Vijay gains the confidence of notorious gangster Rauf Lala in order to reach Kancha Cheena, a crime lord operating from Mandwa. Vijay wants to avenge his father who was framed and killed by Kancha.
+");
+insert into Movie values("mm0030","RockStar","2011",7.6,"College student Janardhan is a simpleton who desperately seeks inspiration for the musician inside him. Although heartbreak helps him reach his goal, it also leads him to self-destruction.
+");
