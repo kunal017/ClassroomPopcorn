@@ -1,0 +1,27 @@
+Insert into User values('joydeepdas994@gmail.com','Joydeep Das','default_pass','https://s-media-cache-ak0.pinimg.com/originals/51/cd/7b/51cd7bce077ddd20cf09f3654d8d0eb1.png');
+
+Insert into User values('JonSnow@gmail.com','Jon Snow','default_pass','https://img.washingtonpost.com/pbox.php?url=http://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2014/09/fortyfaces250.gif&w=1484&op=resize&opt=1&filter=antialias&t=20170517');
+
+Insert into User values('JonSno@gmail.com','Jon Sno','default_pass','https://media.istockphoto.com/photos/young-beautiful-woman-picture-id538812613?k=6&m=538812613&s=612x612&w=0&h=LqQ9V5AtqIp9saDMjHQT4qjQ3gjVryNLhKC8OvpTBOs=');
+
+Insert into User values('JonSn@gmail.com','Jon Sn','default_pass','http://goldenmeancalipers.com/wp-content/uploads/2011/12/mirror11.jpg');
+
+Insert into User values('JonSnowBrown@gmail.com','Jon SnowBrown','default_pass','http://sinkoraswim.com/wp-content/uploads/2014/06/Wink-783x1173.png');
+
+Insert into User values('JonSnoBrown@gmail.com','Jon SnoBrown','default_pass','https://ggia.berkeley.edu/assets/general/GGIA-HumanFace.jpg');
+
+Insert into User values('JonSnBrown@gmail.com','Jon SnBrown','default_pass','https://s-media-cache-ak0.pinimg.com/originals/fb/b1/13/fbb113792a964da4024499d31d935a70.png');
+
+Insert into User values('heerdeepdas994@gmail.com','Heerdeep Das','default_pass','https://www.3ders.org/images2014/3d-printing-to-aid-human-face-transplants-2.jpg');
+
+Insert into User values('HeerSnow@gmail.com','Heer Snow','default_pass','https://s-media-cache-ak0.pinimg.com/originals/ce/6b/77/ce6b7710215a7dc2f859b2ac0328e44e.jpg');
+
+Insert into User values('HeerSno@gmail.com','Heer Sno','default_pass','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbad_Y0yoHS9CZdGKB4ogbbRHwTU0-IxSyEspgd6FNWubTPYvE');
+
+Insert into User values('HeerSn@gmail.com','Heer Sn','default_pass','https://s-media-cache-ak0.pinimg.com/236x/09/ec/89/09ec898670da146e5f7519197f9a6f77--woman-face-girl-face.jpg');
+
+Insert into User values('HeerSnowBrown@gmail.com','Heer SnowBrown','default_pass','http://www.telegraph.co.uk/content/dam/business/2017/08/20/TELEMMGLPICT000137885974_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpeg?imwidth=480');
+
+Insert into User values('HeerSnoBrown@gmail.com','Heer SnoBrown','default_pass','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6WmLHql7CI0ASEBACMQwuPEPE2ZOSfyyaT8UKGMhrHfp2DTlhOw');
+
+Insert into User values('HeerSnBrown@gmail.com','Heer SnBrown','default_pass','https://humanchessdotorg.files.wordpress.com/2014/04/happily-surprised.jpg');

@@ -1,0 +1,19 @@
+Insert into Reviews values('joydeepdas994@gmail.com','mm0001',' 2016-09-26 07:45:34','8','Good Movie');
+
+Insert into Reviews values('HeerSnBrown@gmail.com','mm0003',' 2017-09-26 07:45:34','7','nice Movie');
+
+Insert into Reviews values('HeerSnoBrown@gmail.com','mm0002',' 2013-09-26 07:45:34','8','Movie it is');
+
+Insert into Reviews values('HeerSnow@gmail.com','mm0007',' 2017-09-26 07:45:34','9','extraordinaryMovie');
+
+Insert into Reviews values('HeerSnow@gmail.com','mm0005',' 2016-09-26 07:45:34','8','Good Movie');
+
+Insert into Reviews values('HeerSnBrown@gmail.com','mm0010',' 2017-08-26 07:55:34','7','nice Movie');
+
+Insert into Reviews values('HeerSnoBrown@gmail.com','mm0007',' 2017-09-26 07:48:34','8','Movie it is');
+
+Insert into Reviews values('HeerSnow@gmail.com','mm0014',' 2017-10-26 07:45:34','10','extraordinary Movie');
+
+Insert into Reviews values('heerdeepdas994@gmail.com','mm0021',' 2017-09-26 07:48:34','6','poor one');
+
+Insert into Reviews values('heerdeepdas994@gmail.com','mm0014',' 2015-10-26 04:45:34','10','not so good');

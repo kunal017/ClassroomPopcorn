@@ -1,0 +1,27 @@
+Insert into Country values('India');
+
+Insert into Country values('Srilanka');
+
+Insert into Country values('Australia');
+
+Insert into Country values('New Zealand');
+
+Insert into Country values('Pakistan');
+
+Insert into Country values('West Indies');
+
+Insert into Country values('Nepal');
+
+Insert into Country values('Maldives');
+
+Insert into Country values('Bangladesh');
+
+Insert into Country values('Zimbabwe');
+
+Insert into Country values('Bhutan');
+
+Insert into Country values('France');
+
+Insert into Country values('Germany');
+
+Insert into Country values('USA');

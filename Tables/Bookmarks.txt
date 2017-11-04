@@ -1,0 +1,20 @@
+Insert into Bookmarks values('joydeepdas994@gmail.com','mm0001',' 47');
+
+Insert into Bookmarks values('HeerSnBrown@gmail.com','mm0003',' 91');
+
+Insert into Bookmarks values('HeerSnoBrown@gmail.com','mm0002',' 69');
+
+Insert into Bookmarks values('HeerSnow@gmail.com','mm0007',' 72');
+
+Insert into Bookmarks values('HeerSnow@gmail.com','mm0005',' 83');
+
+Insert into Bookmarks values('HeerSnBrown@gmail.com','mm0010',' 97');
+
+Insert into Bookmarks values('HeerSnoBrown@gmail.com','mm0007',' 123');
+
+Insert into Bookmarks values('HeerSnow@gmail.com','mm0014',' 117');
+
+Insert into Bookmarks values('heerdeepdas994@gmail.com','mm0021',' 75');
+
+Insert into Bookmarks values('heerdeepdas994@gmail.com','mm0014',' 114');
+
