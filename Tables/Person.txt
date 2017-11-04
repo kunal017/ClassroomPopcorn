@@ -12,7 +12,7 @@ insert into Person values('pp0011','Manoj Bajpayee','Male','http://www.imdb.com/
 insert into Person values('pp0012','Anurag Kashyap','Male','http://www.imdb.com/name/nm0440604/mediaviewer/rm3766621440');
 insert into Person values('pp0013','Rakesh Bhagwani','Male','https://pbs.twimg.com/profile_images/926537248/image_400x400.jpg');
 insert into Person values('pp0014','Darsheel Safary','Male','http://www.imdb.com/name/nm2594301/mediaviewer/rm3095793152');
-insert into Person values('pp0015','Omprakash Mehra',Male','http://www.imdb.com/name/nm1018493/mediaviewer/rm2288395264');
+insert into Person values('pp0015','Omprakash Mehra','Male','http://www.imdb.com/name/nm1018493/mediaviewer/rm2288395264');
 insert into Person values('pp0016','Adam Bohling','Male','https://assets.mubi.com/images/cast_member/55496/image-w240.jpg?1489712211');
 insert into Person values('pp0017','Saif Ali Khan','Male','http://www.imdb.com/name/nm0451307/mediaviewer/rm2008132608');
 insert into Person values('pp0018','Farhan Akhtar','Male','http://www.imdb.com/name/nm1027719/mediaviewer/rm341177600');
