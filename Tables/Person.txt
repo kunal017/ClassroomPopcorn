@@ -33,3 +33,4 @@ insert into Person values('pp0032','Ronnie Screwvala','Male','https://pbs.twimg.
 insert into Person values('pp0033','Rani Mukerji','Female','http://www.imdb.com/name/nm0611552/mediaviewer/rm2791380224');
 insert into Person values('pp0034','Sanjay Leela Bhansali','Male','http://www.imdb.com/name/nm0080220/mediaviewer/rm2663749888');
 insert into Person values('pp0035','Bhavani Iyer','Female','http://images.mid-day.com/2013/aug/bhavani-iyer.jpg');
+insert into Person values('pp0036','Ritesh Sidhwani','Male','https://pbs.twimg.com/profile_images/589812810239987714/UzqlGxcV.jpg');
