@@ -1,10 +1,10 @@
-insert into Person values('pp0001','Kangana Ranaut','Female','http://www.imdb.com/name/nm2144007/mediaviewer/rm2548508160');
-insert into Person values('pp0002','Vikas Bahl','Male','http://www.imdb.com/name/nm4318482/mediaviewer/rm3564911872');
+insert into Person values('pp0001','Kangana Ranaut','Female','https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Kangana_Ranaut_2013.jpg/220px-Kangana_Ranaut_2013.jpg');
+insert into Person values('pp0002','Vikas Bahl','Male','https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Vikas_Bahl.jpg/220px-Vikas_Bahl.jpg');
 insert into Person values('pp0003','Vikram Malhotra','Male','http://cdn5.thr.com/sites/default/files/2013/08/vikram_malhotra.jpg');
-insert into Person values('pp0004','Rajesh Khanna','Male','http://www.imdb.com/name/nm0004435/mediaviewer/rm725986048');
-insert into Person values('pp0005','Amitabh Bachchan','Male','http://www.imdb.com/name/nm0000821/mediaviewer/rm972273152');
-insert into Person values('pp0006','Hrishikesh Mukherjee','Male','http://www.imdb.com/name/nm0611531/mediaviewer/rm926746624');
-insert into Person values('pp0007','Aamir Khan','Male','http://www.imdb.com/name/nm0451148/mediaviewer/rm3417356800');
+insert into Person values('pp0004','Rajesh Khanna','Male','http://cdn4.thr.com/sites/default/files/2012/07/rajesh_khanna.jpg');
+insert into Person values('pp0005','Amitabh Bachchan','Male','https://images-na.ssl-images-amazon.com/images/M/MV5BNTk1OTUxMzIzMV5BMl5BanBnXkFtZTcwMzMxMjI0Nw@@._V1_UY317_CR8,0,214,317_AL_.jpg');
+insert into Person values('pp0006','Hrishikesh Mukherjee','Male','https://images-na.ssl-images-amazon.com/images/M/MV5BNTY4MjAyMjYtMjRjMi00Y2VjLWJiOWYtOGY2Njc5NGZlNDE3XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_UY317_CR12,0,214,317_AL_.jpg');
+insert into Person values('pp0007','Aamir Khan','Male','https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwMjk3NDUzN15BMl5BanBnXkFtZTcwNjI4MTY0NA@@._V1_UX214_CR0,0,214,317_AL_.jpg');
 insert into Person values('pp0008','Salman Khan','Male','http://www.imdb.com/name/nm0006795/mediaviewer/rm2642547968');
 insert into Person values('pp0009','Rajkumar Santoshi','Male','http://www.imdb.com/name/nm0764316/mediaviewer/rm2291546112');
 insert into Person values('pp0010','Shanti Sinha','Female','https://i.ytimg.com/vi/EHvzZCa83ig/hqdefault.jpg');
