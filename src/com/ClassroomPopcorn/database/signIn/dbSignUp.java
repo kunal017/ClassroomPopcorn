@@ -7,32 +7,28 @@ import java.sql.PreparedStatement;
 
 public class dbSignUp {
 
-    public static String[] userSignUp(String fullName,String userName,String emailId,String password){
+
+    public static String[] userSignUp(String fullName,String emailId,String password,String imageurl){
         Connection con = null;
 
         PreparedStatement stmt = null;
-        String query = DBUtils.prepareInsertQuery("classroompopcorn.userdetail", "fullName, username, emailId, password", "?,?,?,?");
+        String query = DBUtils.prepareInsertQuery("classroompopcorn.User", "Email_Id, Name, Password, Image_url", "?,?,?,?");
 
-        String updateCurrentUserQuery = DBUtils.prepareInsertQuery("classroompopcorn.currentuserlog", "username, fullName, loggedIn", "?,?,?");
+        //String updateCurrentUserQuery = DBUtils.prepareInsertQuery("classroompopcorn.currentuserlog", "username, fullName, loggedIn", "?,?,?");
 
-        String[] status = {"ongoing","username"};
+        String[] status = {"ongoing","username","emailId"};
 
         try{
             con = DBUtils.getConnection();
             stmt = con.prepareStatement(query);
-            stmt.setString(1, fullName);
-            stmt.setString(2, userName);
-            stmt.setString(3, emailId);
-            stmt.setString(4, password);
+            stmt.setString(1, emailId);
+            stmt.setString(2, fullName);
+            stmt.setString(3, password);
+            stmt.setString(4, imageurl);
             stmt.executeUpdate();
             status[0]="success";
             status[1]=fullName;
-
-            stmt = con.prepareStatement(updateCurrentUserQuery);
-            stmt.setString(1, userName);
-            stmt.setString(2, status[1]);
-            stmt.setString(3, "1");
-            stmt.executeUpdate();
+            status[2]=emailId;
         }
         catch(Exception e){
             status[0] = e.getMessage();
