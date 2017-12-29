@@ -31,7 +31,7 @@ public class userSignUp {
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 
-    public String[] status = {"",""};
+    public String[] status = {"","",""};
 
     public String[] userSignUp(){
         final BooleanProperty firstTime = new SimpleBooleanProperty(true); // Variable to store the focus on stage load
@@ -66,26 +66,26 @@ public class userSignUp {
             }
         });
 
-        TextField username = new TextField();
-        username.setPromptText("Username");
-        username.setStyle("-fx-border-radius: 100");
-
         TextField email = new TextField();
         email.setPromptText("Email Id");
         email.setStyle("-fx-border-radius: 100");
 
         PasswordField password = new PasswordField();
-        password.setPromptText("password");
+        password.setPromptText("Password");
         password.setStyle("-fx-border-radius: 100");
 
         PasswordField confirmPassword = new PasswordField();
-        confirmPassword.setPromptText("password");
+        confirmPassword.setPromptText("Confirm Password");
         confirmPassword.setStyle("-fx-border-radius: 100");
+
+        TextField imageurl = new TextField();
+        imageurl.setPromptText("Image url");
+        imageurl.setStyle("-fx-border-radius: 100");
 
         Label error = new Label();
         error.setTextFill(Color.web("red"));
 
-        vb.getChildren().addAll(fullName, username, email, password, confirmPassword, error);
+        vb.getChildren().addAll(fullName, email, password, confirmPassword, imageurl, error);
 
         loginPane.setCenter(vb);
 
@@ -100,8 +100,8 @@ public class userSignUp {
         signUpButton.setOnAction(e-> {
             if (fullName.getText().isEmpty())
                 error.setText("Full Name can't be empty");
-            else if (username.getText().isEmpty())
-                error.setText("username can't be empty");
+            else if (imageurl.getText().isEmpty())
+                error.setText("Image url can't be empty");
             else if (email.getText().isEmpty())
                 error.setText("Email Id can't be empty");
             else if (!validate(email.getText()))
@@ -113,7 +113,7 @@ public class userSignUp {
             else if (!password.getText().equals(confirmPassword.getText()))
                 error.setText("Password and confirm password don't match");
             else{
-                status = dbSignUp.userSignUp(fullName.getText(),username.getText(),email.getText(),password.getText());
+                status = dbSignUp.userSignUp(fullName.getText(),email.getText(),password.getText(),imageurl.getText());
                 if (status[0]=="success")
                     loginStage.close();
                 else
