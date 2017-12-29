@@ -25,7 +25,7 @@ import javafx.stage.Stage;
 
 public class userLogin {
 
-    public String[] status = {"",""};
+    public String[] status = {"","",""};
 
     public String[] userLogin(){
         final BooleanProperty firstTime = new SimpleBooleanProperty(true); // Variable to store the focus on stage load
@@ -51,7 +51,7 @@ public class userLogin {
         vb.setPadding(new Insets(50,20,-20,20));
 
         TextField username = new TextField();
-        username.setPromptText("username or email address");
+        username.setPromptText("Email Address");
         username.setStyle("-fx-border-radius: 100");
         username.focusedProperty().addListener((observable,  oldValue,  newValue) -> {
             if(newValue && firstTime.get()){
@@ -61,7 +61,7 @@ public class userLogin {
         });
 
         PasswordField password = new PasswordField();
-        password.setPromptText("password");
+        password.setPromptText("Password");
         password.setStyle("-fx-border-radius: 100");
 
         Label error = new Label();
