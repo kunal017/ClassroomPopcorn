@@ -1,8 +1,8 @@
 # ClassroomPopcorn
 
-Note - Report.pdf contains the database design part. It covers normalized ERD, FDs, PAs, NPAs, normalization steps, and minimal cover steps.
+The Report Part-I.pdf contains the details of the database design. This includes the steps for ERD, Schema Diagram, identification of FDs, Minimal Cover, Prime and Non-Prime Attributes, Normalization to obtain the set of final tables.
 
-Report-Part-II.pdf contains the second part of project. It involves SQL queries and features implemented.
+Report-Part-II.pdf contains the second part of project. It involves SQL queries and features implemented along with code snippets and screenshots.
 
-Here is current screenShot
+Here is the screenshot of the homepage
 <img src="https://github.com/madHEYsia/ClassroomPopcorn/blob/master/Screenshot.JPG" >
