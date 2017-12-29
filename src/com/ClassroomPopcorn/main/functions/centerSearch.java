@@ -1,7 +1,13 @@
 package com.ClassroomPopcorn.main.functions;
 
 import com.ClassroomPopcorn.database.getMovies.movieDetails;
+import com.ClassroomPopcorn.database.logIn.userLoggedIn;
 import com.ClassroomPopcorn.main.windows.home.main;
+
+import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 
 import javafx.scene.Cursor;
@@ -17,6 +23,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 public class centerSearch {
 
@@ -41,7 +50,7 @@ public class centerSearch {
         searchRow.setAlignment(Pos.TOP_CENTER);
 
         TextField searchBox = new TextField();
-        searchBox.setPromptText("By movie name, cast, director, etc.");
+        searchBox.setPromptText("By movie name, keywords, etc.");
         searchBox.setStyle("-fx-focus-color: transparent;");
         searchBox.setPrefColumnCount(35);
         searchBox.setPrefHeight(35);
@@ -77,30 +86,17 @@ public class centerSearch {
         ComboBox genreComboBox = new ComboBox();
         genreComboBox.getItems().addAll(
                 "All",
-                "Absurdist/surreal/whimsical",
                 "Action",
                 "Adventure",
+                "Animation",
                 "Comedy",
                 "Crime",
-                "Drama",
-                "Fantasy",
+                "Fiction",
                 "Historical",
-                "Historical fiction",
                 "Horror",
-                "Magical realism",
                 "Mystery",
-                "Paranoid",
-                "Philosophical",
-                "Political",
-                "Romance",
-                "Saga",
-                "Satire",
-                "Science fiction",
-                "Slice of Life",
-                "Speculative",
-                "Thriller",
-                "Urban",
-                "Western"
+                "Romantic",
+                "Thriller"
         );
         genreComboBox.getSelectionModel().selectFirst();
         genreCollection.getChildren().addAll(genreLabel,genreComboBox);
@@ -126,58 +122,108 @@ public class centerSearch {
         ratingCollection.getChildren().addAll(ratingLabel,ratingComboBox);
 
         VBox orderCollection = new VBox(10);
-        Label orderLabel = new Label("order By: ");
+        Label orderLabel = new Label("Order By: ");
         orderLabel.setFont(new Font("Cambria", 20));
         orderLabel.setTextFill(Color.web("#5a5a5a"));
         ComboBox orderComboBox = new ComboBox();
         orderComboBox.getItems().addAll(
                 "Latest",
+                "Recommended",
+                "Trending",
                 "Oldest",
-                "Likes",
-                "Alphabetical",
-                "Downloads"
+                "User_Rating",
+                "Alphabetical"
         );
         orderComboBox.getSelectionModel().selectFirst();
         orderCollection.getChildren().addAll(orderLabel,orderComboBox);
 
+        VBox dummybox = new VBox(10);
+
+        Label dummy = new Label(" ");
+        dummy.setFont(new Font("Cambria", 20));
+
+        Button bookmarkButton = new Button("My Bookmarks");
+        bookmarkButton.setStyle("-fx-focus-color: transparent;");
+        bookmarkButton.setFont(new Font("Cambria", 16));
+        bookmarkButton.setStyle("-fx-background-color: #6ac045;");
+        bookmarkButton.setTextFill(Color.web("#fff"));
+        bookmarkButton.setCursor(Cursor.HAND);
+
+        dummybox.getChildren().addAll(dummy,bookmarkButton);
+
         filterRow.getChildren().addAll(genreCollection,ratingCollection,orderCollection);
 
         //=================================================================================
-        searchVB.getChildren().addAll(searchLabel, searchRow, filterRow);
+        searchVB.getChildren().addAll(searchLabel, searchRow, filterRow, bookmarkButton);
         searchVB.setPadding(new Insets(0,0,50,0));
 
-        final BorderPane searchResult = new BorderPane(movieDetails.movieDetails("ORDER BY yearOfRelease desc"));
+        final BorderPane searchResult = new BorderPane(movieDetails.movieDetails("ORDER BY Release_Year desc"," ",0));
+
+        bookmarkButton.setOnAction(event -> {
+            String [] status = userLoggedIn.userLoggedIn();
+            String login_details;
+
+            int flag_login=0;
+
+            if (status[2]==null){
+                login_details = get_msn.getMotherboardSN();
+
+            }
+            else{
+                login_details  = status[2];
+                flag_login = 1;
+            }
+            searchResult.getChildren().clear();
+            searchResult.setCenter(movieDetails.movieDetails("bookmark",login_details,flag_login));
+
+            searchBox.requestFocus(); // Delegate the focus to container
+        });
+
         searchButton.setOnAction(e->{
 
-            String condition;
+            String condition="";
             String genre = genreComboBox.getValue().toString();
             genre = genre.equals("All") ? "" : genre;
+            String [] status = userLoggedIn.userLoggedIn();
+            String login_details;
 
+            int flag_login=0;
+
+            if (status[2]==null){
+                login_details = get_msn.getMotherboardSN();
+
+            }
+            else{
+                login_details  = status[2];
+                flag_login = 1;
+            }
             String rate = ratingComboBox.getValue().toString();
             rate = rate.charAt(0)=='A' ? "1" :  rate.charAt(0)+"";
 
             if (genre.equals(""))
-                condition="WHERE IMDB>"+rate;
+                condition="WHERE Imdb_rating>"+rate;
             else
-                condition="WHERE IMDB>"+rate+" AND genre LIKE '%"+genre+"%'";
+                condition="WHERE Imdb_rating>"+rate+" AND Genres LIKE '%"+genre+"%'";
 
             if (!searchBox.getText().isEmpty())
-                condition = condition+" AND movieName LIKE '%"+searchBox.getText()+"%'";
+                condition = condition+" AND Title LIKE '%"+searchBox.getText()+"%' OR Keywords LIKE '%"+searchBox.getText()+"%'";
 
             String orderBy = orderComboBox.getValue().toString();
             if (orderBy.equals("Latest"))
-                condition = condition + " ORDER BY yearOfRelease desc";
+                condition = condition + " ORDER BY Release_Year desc";
             else if (orderBy.equals("Oldest"))
-                condition = condition + " ORDER BY yearOfRelease asc";
-            else if (orderBy.equals("Likes"))
-                condition = condition + " ORDER BY likes desc";
+                condition = condition + " ORDER BY Release_Year asc";
             else if (orderBy.equals("Alphabetical"))
-                condition = condition + " ORDER BY movieName asc";
-            else if (orderBy.equals("Downloads"))
-                condition = condition + " ORDER BY downloads desc";
+                condition = condition + " ORDER BY Title asc";
+            else if (orderBy.equals("Trending"))
+                condition = condition + "Z";
+            else if (orderBy.equals("Recommended"))
+                condition = condition + "Y";
+            else if (orderBy.equals("User_Rating"))
+                condition = condition + "X";
 
             searchResult.getChildren().clear();
-            searchResult.setCenter(movieDetails.movieDetails(condition));
+            searchResult.setCenter(movieDetails.movieDetails(condition,login_details,flag_login));
 
             searchBox.requestFocus(); // Delegate the focus to container
         });
