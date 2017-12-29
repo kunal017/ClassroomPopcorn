@@ -142,6 +142,26 @@ public class DBUtils {
         return "SELECT " + columns + " FROM " + tableName + whereClause + " " + otherClause;
     }
 
+    public static String prepareSelectQuery(String columns,String tableName, String tableName2, String whereClause, String otherClause){
+        if(columns.isEmpty())
+            columns = "*";
+        if(whereClause.isEmpty())
+            whereClause = "";
+        else
+            whereClause = " WHERE " + whereClause;
+        return "SELECT " + columns + " FROM " + tableName + " natural join "+ tableName2 + whereClause + " " + otherClause;
+    }
+
+    public static String prepareSelectQuery(String columns,String tableName, String tableName2, String tableName3,String tableName4, String whereClause, String otherClause){
+        if(columns.isEmpty())
+            columns = "distinct(MID), Title, Release_Year,Imdb_rating,Synopsis,Image_url";
+        if(whereClause.isEmpty())
+            whereClause = "";
+        else
+            whereClause = " WHERE " + whereClause;
+        return "SELECT " + columns + " FROM " + tableName + " natural join "+ tableName2 + " natural join "+ tableName3 + " natural join "+ tableName4 + whereClause + " " + otherClause;
+    }
+
     public static String prepareInsertQuery(String tableName, String columns, String values){
         if(columns.isEmpty())
             columns = " ";
