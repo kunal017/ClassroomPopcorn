@@ -8,34 +8,32 @@ import java.sql.ResultSet;
 
 public class dbLoginCheck {
 
-    public static String[] dbLoginCheck(String userName, String password) {
+    public static String[] dbLoginCheck(String emailId, String password) {
         Connection con = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
-        String query = DBUtils.prepareSelectQuery(" * ", "classroompopcorn.userdetail", "(username = ? OR emailId = ? ) AND password = ?");
+        String query = DBUtils.prepareSelectQuery(" * ", "classroompopcorn.User", "Email_Id = ?  AND Password = ?");
 
-        String updateCurrentUserQuery = DBUtils.prepareInsertQuery("classroompopcorn.currentuserlog", "username, fullName, loggedIn", "?,?,?");
+        //String updateCurrentUserQuery = DBUtils.prepareInsertQuery("classroompopcorn.currentuserlog", "username, fullName, loggedIn", "?,?,?");
 
-        String[] status = {"ongoing","username"};
+        String[] status = {"ongoing","username","emailId"};
 
         try {
             con = DBUtils.getConnection();
             stmt = con.prepareStatement(query);
-            stmt.setString(1, userName);
-            stmt.setString(2, userName);
-            stmt.setString(3, password);
+            stmt.setString(1, emailId);
+            stmt.setString(2, password);
             rs = stmt.executeQuery();
-            rs.next();
-            status[0]="success";
-            status[1]=rs.getString("fullName");
-
-            stmt = con.prepareStatement(updateCurrentUserQuery);
-            stmt.setString(1, userName);
-            stmt.setString(2, status[1]);
-            stmt.setString(3, "1");
-            stmt.executeUpdate();
-
+            rs.beforeFirst();
+            status[0] = "";
+            status[1]="";
+            status[2]="";
+            while(rs.next()) {
+                status[0] = "success";
+                status[1] = rs.getString("Name");
+                status[2] = rs.getString("Email_Id");
+            }
         } catch (Exception e) {
             e.printStackTrace();
             status[0] = e.getMessage();
