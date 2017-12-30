@@ -50,8 +50,9 @@ Project SDK:
 
 
 16. Modules: 
-    Under "Sources" tab, right click on "src" -> "Test Resources". (Right hand side you could see src choosen as Test Resource folder).
-
+    Click on "Sources" tab and then Save. 
+    Note: Right click on "src" and make sure "Test Resources" is not chosen.
+    
 
 17. MYSQL Library: "Libraries" -> "+" -> "Java" -> select jar file from src\lib\sql\mysql-connector-java-5.1.41-bin.jar
 FontAwesome Library: 
